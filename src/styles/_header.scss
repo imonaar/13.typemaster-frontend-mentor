@@ -1,0 +1,109 @@
+.header{
+    inline-size: 100%;
+    max-width: 69.375rem;
+    z-index: 100;
+   
+    @include desktop{
+        padding-inline: 0;
+    }
+
+    &__wrapper{
+        inline-size: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-block-start: 1.4375rem;
+        block-size: 3rem;
+        align-items: center;
+
+        @include desktop{
+            margin-block-start: 3.4375rem;
+        }
+    }
+
+    &__logo{
+        block-size: 100%;
+        block-size: 3rem;
+        display: flex;
+        align-items: center;
+
+        img{
+            display: block;
+          
+        }
+    }
+
+    &__hero{
+        margin-block-start: 4rem;
+
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include desktop{
+            gap: 3rem;
+        }
+    }
+
+    &__description{
+        display: flex;
+        align-items: center;
+ 
+        h1{
+            color: black;
+            font-size: 48px;
+            margin-block-end: 2rem;
+            line-height: 48px;
+        }
+
+        p{
+            line-height: 26px;
+            padding-block-end: 2rem;
+
+            @include desktop{
+                inline-size: 45ch;
+            }
+        }
+
+        .order{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span{
+                font-weight: 600;
+            }
+
+            @include desktop{
+                justify-content: flex-start;
+                gap: 3rem;
+            }
+        }
+    }
+
+    &__image{
+        display: block;
+        block-size: 20.625rem;
+        overflow: hidden;
+        border-radius: 1rem 0 0 1rem;
+        margin-left: 1.5rem;
+        margin-block-start: 2rem;
+        background: url('../../assets/mobile/image-keyboard.jpg');
+        background-size: cover;
+
+        @include tablet{
+            block-size: 26.5625rem;
+            background: url('../../assets/tablet/image-keyboard.jpg');
+            background-size: cover;
+       
+        }
+
+        @include desktop{
+            margin-right: 1.5rem;
+            border-radius: 1rem;
+            background: url('../../assets/desktop/image-keyboard.jpg');
+            background-size: cover;
+        }
+    }
+
+}
