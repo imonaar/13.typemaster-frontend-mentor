@@ -48,7 +48,7 @@
                     border-radius: 10px;
                 }
 
-                @include tablet{
+                @include desktop{
                     background: url('../../assets/desktop/image-phone-and-keyboard.jpg');
                     background-size: cover ;
                 }
@@ -76,7 +76,7 @@
                     background-size: cover ;
                 }
 
-                @include tablet{
+                @include desktop{
                     background: url('../../assets/desktop/image-glass-and-keyboard.jpg');
                     background-size: cover ;
                 }
