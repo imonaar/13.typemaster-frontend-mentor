@@ -88,9 +88,10 @@ p, span{
         border-radius: 1rem;
         background-color: var(--very-light-blue);
         position: absolute;
+        z-index: -1;
 
         &.left{
-            top: 950px;
+            top: 900px;
             left: -120px;
         }
 
@@ -101,3 +102,7 @@ p, span{
     }   
 }
 
+.main{
+    inline-size: 100%;
+    max-width: 70rem;
+}
