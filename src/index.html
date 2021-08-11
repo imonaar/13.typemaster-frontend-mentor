@@ -12,12 +12,12 @@
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
 </head>
 <body>
-    <header class="header" role="banner">
+    <header class="header">
         <div class="header__wrapper p-in">
             <div class="header__logo" role="img" aria-label="Site Logo">
                 <img src="../assets/shared/logo.svg" alt="Site Logo">
             </div>
-            <button class="header__button btn btn-1" role="button">PRE-ORDER NOW</button>
+            <button class="header__button btn btn-1">PRE-ORDER NOW</button>
         </div>
         <div class="header__hero">
             <div class="header__description  p-in">
@@ -27,7 +27,7 @@
                         mechanical typing experience.
                     </p>
                     <div class="order">
-                        <button role="button" class="btn btn-2"> PRE-ORDER NOW</button>
+                        <button  class="btn btn-2"> PRE-ORDER NOW</button>
                         <span>RELEASE ON 5/27</span>
                     </div>
                 </div>
@@ -38,13 +38,13 @@
     </header>
 
     <div class="main">
-        <section class="keyboard">
+        <section class="keyboard" role="region" aria-labelledby="keyboard-header">
             <div class="keyboard__gallery">
                 <div class="common left"></div>
                 <div class="common right"></div>
             </div>
             <div class="keyboard__description p-in">
-                <h2>Mechanical wireless keyboard</h2>
+                <h2 id="keyboard-header">Mechanical wireless keyboard</h2>
                 <p>  
                     The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
                     of switches and keycaps, along with reliable wireless connectivity.
@@ -52,7 +52,7 @@
             </div>
         </section>
 
-        <section class="details ">
+        <section class="details" role="region" aria-label="">
             <div class="details__wrapper p-in">
                 <div class="details__item">
                     <div class="icon">
