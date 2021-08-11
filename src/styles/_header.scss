@@ -99,6 +99,7 @@
         }
 
         @include desktop{
+            block-size: 30rem;
             margin-right: 1.5rem;
             border-radius: 1rem;
             background: url('../../assets/desktop/image-keyboard.jpg');
