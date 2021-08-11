@@ -106,3 +106,15 @@ p, span{
     inline-size: 100%;
     max-width: 70rem;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 2rem;
+    color: var(--light-blue);
+
+    span{
+        font-weight: bold;
+    }
+}
